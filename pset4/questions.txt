@@ -1,0 +1,19 @@
+0.  Gif: 256 (8 bit) / JPG: 16M (24 bit) / PNG: 16M (24 bit) / BMP 16M (24 bit) or 4B (32 bit)
+1.  Gif. (PNG can support animation with an extension that is not yet widely supported)
+2.  In lossless compression, the entire original file can be restored -- i.e., not bits are "lost" for good. In lossy, some information is lost, usually duplicative info and/or info (e.g., quality) that is deemed not noticable to the user. The full pre-compressed file can not be restored.
+3.  Gif: Lossless; JPG: Lossy; PNG: Lossless; BMP: Lossless
+4.  What's most notable is what's NOT done -- the actual data itself is not wiped. What instead happens is the file is modified to indicated that the file itself has been deleted and that the directory entry in the FAT table can be recycled; additionally the clusters associated with the file are moved to the available/free list
+5.  Beyond physical destruction of the hard disk or degaussing, the article proposes to "fill every addressable block ... zeroes". The article points out how this could in some cases still leave a trace and proposes that still strong "wipe" is to use the 22 Gutman patterns (in sequence) to wipe the disk in lieu of just writing zeros. 
+6.  A library which includes useful typedefs (implements as structs) 
+7.  To give us more advanced data types that can be used to account for differences in size of data type implementations across difference systems. They abstract away some of the specificity around the size of an underlying data type to make the code portable
+8.  BYTE = 1 byte; DWORD = 4 bytes; LONG = 4 bytes; WORD = 2 bytes
+9.  0x42 0x4D
+10. biSize is the size of just BITMAPINFOHEADER; bfSize is the size of the image overall
+11. A negative number indicates that the image should be rendered the image from the top left corner down; a positive number will make the JPG render bottoms up
+12. biBitCount
+13. To check that the file got successfully opened. Reasons it might not have been (i.e., NULL is returned) include the system being out of memory or disk permissions in the write directory
+14. Because so far we've wanted to only return one element at a time which with which we then do something / take action
+15. 3
+16. It sets the position of the cursor (file position indicator) within the file based on the 2nd argument, offset, and the 3rd argument, the "whence" or reference position
+17. The current position of the seek cursor in the file
+18. Rick Astley
