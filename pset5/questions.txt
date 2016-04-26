@@ -1,0 +1,11 @@
+0.  To quote wikipedia, it's an "English word that refers to a lung disease that is otherwise known as silicosis"
+1.  It shows "resource usage statistics for the calling process, which is the sum of resources used by all threads in the process" -- it shows how efficientluy a calling procsss is running
+2.  16, 2 of which themselves are other structures
+3.  So that they can be referenced and used in other parts of the program
+4.  It first checks to see that the character being read is alphabetical or if it is a backspace. Then, in a nested conditional, it checks to see if the length of the word is longer than the longest word allowed (the "LENGTH" parameter) in which case it will disregard what's left. From there it then checks if there a numbers and will ignore words with numbers. After checking that the word is neither too long or contains numbers, it writes the word terminal \0 to the word, and then checks to see if the word is misspelled while also measuring the time it takes.
+5.  Because there are several character by character checks that the program needs to do (e.g., isdigit) that are best done by iterating through the string as an array of characters
+6.  To prevent modifications to the file and seach word respectively
+7.  Hashtable. load_node is what I iterate on to do the loading of the words; in check I use a note called search_node and then do a string compare to see if I have found the word
+8.  About 8 seconds to load; several seconds on check
+9.  Initially I was adding the load_node at the END of the linked list and then changed it to the start (suggestion by Doug, fyi). I also changed the hash function to hash on the first two charaacters
+10. Yes, my check function is not as fast as I'd like. I modified it to handle substrings right and don't think I have the performance where it could be; I also have an unresolved memory leak with memory that is still accessible. I read this is not an issue on some C web sites, but I still wish I could have resolved it.

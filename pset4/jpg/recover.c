@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
     }
     
     //create a buffer to hold each block 
-    uint8_t buffer[512];
+    uint8_t buffer[&length];
     
     //keep read blocks while there are blocks to read
     while (fread(buffer, sizeof(uint8_t), 512, inptr))
